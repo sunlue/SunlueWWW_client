@@ -1,0 +1,37 @@
+{
+  "caseData": [
+    {
+      "id": 1,
+      "type": "1",
+      "logo": "./images/caseLogo.png",
+      "name": "峨眉山景区第一类",
+      "nameEn": "Mount emei",
+      "intro": "四川省西南部，四川盆地的西南边缘，是中国“四大佛教名山”之一，地势陡峭，风景秀丽，素有“峨眉天下秀”之称，山上的万佛顶最高，海拔3099米，高出峨眉平原2700多米。“云鬘凝翠，鬒黛遥妆，真如螓首蛾眉，细而长，美而艳也，故名峨眉山。",
+      "url": "http://www.ems517.com/",
+      "image": "./images/aboutPartnersImg1.jpg",
+      "details": "<p style=\"text-align:center;\"><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151241255008.jpg\" alt=\"武骏实业公司网站建设-1\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151241426757.jpg\" alt=\"武骏实业公司网站建设-2\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151241521781.jpg\" alt=\"武骏实业公司网站建设-3\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/2019115124222748.jpg\" alt=\"武骏实业公司网站建设-4\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151242111058.jpg\" alt=\"武骏实业公司网站建设-5\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151242194507.jpg\" alt=\"武骏实业公司网站建设-6\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151242286435.jpg\" alt=\"武骏实业公司网站建设-7\"></p>"
+    },
+    {
+      "id": 2,
+      "type": "2",
+      "logo": "./images/caseLogo.png",
+      "name": "峨眉山景区第二类",
+      "nameEn": "Mount emei",
+      "intro": "四川省西南部，四川盆地的西南边缘，是中国“四大佛教名山”之一，地势陡峭，风景秀丽，素有“峨眉天下秀”之称，山上的万佛顶最高，海拔3099米，高出峨眉平原2700多米。“云鬘凝翠，鬒黛遥妆，真如螓首蛾眉，细而长，美而艳也，故名峨眉山。",
+      "url": "http://www.ems517.com/",
+      "image": "./images/aboutPartnersImg1.jpg",
+      "details": "<p style=\"text-align:center;\"><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151241255008.jpg\" alt=\"武骏实业公司网站建设-1\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151241426757.jpg\" alt=\"武骏实业公司网站建设-2\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151241521781.jpg\" alt=\"武骏实业公司网站建设-3\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/2019115124222748.jpg\" alt=\"武骏实业公司网站建设-4\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151242111058.jpg\" alt=\"武骏实业公司网站建设-5\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151242194507.jpg\" alt=\"武骏实业公司网站建设-6\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151242286435.jpg\" alt=\"武骏实业公司网站建设-7\"></p>"
+    },
+    {
+      "id": 3,
+      "type": "3",
+      "logo": "./images/caseLogo.png",
+      "name": "峨眉山景区第三类",
+      "nameEn": "Mount emei",
+      "intro": "四川省西南部，四川盆地的西南边缘，是中国“四大佛教名山”之一，地势陡峭，风景秀丽，素有“峨眉天下秀”之称，山上的万佛顶最高，海拔3099米，高出峨眉平原2700多米。“云鬘凝翠，鬒黛遥妆，真如螓首蛾眉，细而长，美而艳也，故名峨眉山。",
+      "url": "http://www.ems517.com/",
+      "image": "./images/aboutPartnersImg1.jpg",
+      "details": "<p style=\"text-align:center;\"><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151241255008.jpg\" alt=\"武骏实业公司网站建设-1\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151241426757.jpg\" alt=\"武骏实业公司网站建设-2\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151241521781.jpg\" alt=\"武骏实业公司网站建设-3\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/2019115124222748.jpg\" alt=\"武骏实业公司网站建设-4\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151242111058.jpg\" alt=\"武骏实业公司网站建设-5\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151242194507.jpg\" alt=\"武骏实业公司网站建设-6\"><br><img src=\"http://www.symansbon.cn/Uploadfiles/Picture/2019-11-5/20191151242286435.jpg\" alt=\"武骏实业公司网站建设-7\"></p>"
+    }
+  ]
+}

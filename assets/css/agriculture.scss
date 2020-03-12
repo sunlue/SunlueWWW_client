@@ -1,0 +1,686 @@
+$windowWidth: 1920px;
+$windowHeight: 1080px;
+$mainColor: #c8262b;
+@function px2vw($size, $width:$windowWidth) {
+  @if (type-of($size) == "number" and unit($size) == "px") {
+    @return $size * 100vw / $width;
+  } @else {
+    @return $size;
+  }
+}
+
+@function px2vh($size, $height:$windowHeight) {
+  @if (type-of($size) == "number" and unit($size) == "px") {
+    @return $size * 100vh / $height;
+  } @else {
+    @return $size;
+  }
+}
+
+.agriculture-banner-box {
+  width: px2vw(1920px);
+  height: px2vh(1080px);
+  background-image: url(../images/agricultureBannerBg.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .title-box {
+    position: absolute;
+    max-width: 692px;
+    text-align: center;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    .title-en {
+      color: #e2e1e1;
+      font-size: 20px;
+      text-transform: uppercase;
+      position: relative;
+      top: -55px;
+    }
+
+    .intro {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .title {
+      position: relative;
+
+      span {
+        color: #fff;
+        margin-left: px2vw(16px);
+        margin-right: px2vw(16px);
+        position: relative;
+      }
+
+      span {
+        &:nth-child(1) {
+          font-size: 100px;
+        }
+
+        &:nth-child(2) {
+          font-size: 70px;
+          margin-top: -30px;
+          top: -.7em;
+        }
+
+        &:nth-child(3) {
+          font-size: 88px;
+          top: -.8em;
+        }
+
+        &:nth-child(4) {
+          font-size: 78px;
+          top: .1em;
+        }
+      }
+    }
+  }
+
+  .bottom-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: px2vh(438px);
+    background-image: url(../images/agricultureBannerBottomBg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .list-box {
+      position: absolute;
+
+      .icon-box {
+        width: px2vw(97px);
+        height: px2vw(97px);
+        margin: auto;
+        position: relative;
+        border-radius: 50%;
+        background-color: #8db729;
+        padding: px2vw(24px);
+
+        .icon-bg {
+          width: 100%;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .name {
+        font-size: 20px;
+        color: #fff;
+        line-height: 2em;
+      }
+
+      &:nth-child(1) {
+        top: px2vh(139px);
+        left: px2vw(310px);
+      }
+
+      &:nth-child(2) {
+        top: px2vh(244px);
+        left: px2vw(740px);
+      }
+
+      &:nth-child(3) {
+        top: px2vh(42px);
+        right: px2vw(692px);
+      }
+
+      &:nth-child(4) {
+        top: px2vh(127px);
+        right: px2vw(292px);
+      }
+    }
+
+    @for $i from 1 through 4 {
+      .list-box:nth-child(#{$i}) {
+        .icon-box {
+          .icon-bg {
+            background-image: url(../images/agricultureBannerBtn#{$i}.png);
+          }
+        }
+      }
+    }
+  }
+}
+
+.agriculture-content-box {
+  width: 100%;
+  padding: px2vh(104px) px2vw(79px);
+
+  .content-box {
+    width: 100%;
+    height: 811px;
+    position: relative;
+
+    .left-box {
+      width: 60%;
+      padding-top: 56px;
+      height: 100%;
+
+      .box {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        background: #f1f1f1;
+        padding: px2vh(30px) 0 0 px2vw(86px);
+
+        .btn-list-box {
+          width: 100%;
+          padding-right: px2vw(86px);
+          cursor: pointer;
+
+          .btn-box {
+            width: 25%;
+
+            .icon-bg {
+              width: px2vw(82px);
+              height: px2vw(82px);
+              margin: 0 auto;
+              position: relative;
+
+              .icon-img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: block;
+                background-size: 45% auto;
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: .3s;
+
+              }
+            }
+
+            .name {
+              text-align: center;
+              color: #999999;
+              font-size: 18px;
+              transition: .3s;
+              position: relative;
+              z-index: 2;
+            }
+
+            &.active-box {
+              .icon-bg {
+                position: relative;
+
+                &::before {
+                  position: absolute;
+                  content: '';
+                  width: 150%;
+                  height: 150%;
+                  background-color: #d1dcb8;
+                  border-radius: 50%;
+                  transform: translateX(-50%) perspective(1px) translateZ(0);
+                  left: 50%;
+                  top: 0;
+                }
+              }
+            }
+          }
+
+          @for $i from 1 through 4 {
+            .btn-box:nth-child(#{$i}) {
+              .icon-img {
+                background-image: url(../images/agricultureGraybtn#{$i}.png);
+              }
+
+              &.active-box {
+                .icon-img {
+                  background-image: url(../images/agricultureGreenbtn#{$i}.png);
+                }
+
+                .name {
+                  color: #8db729;
+                }
+              }
+            }
+          }
+        }
+
+        #agricultureData {
+          margin-top: 33px;
+
+          .list-item {
+            .img-box {
+              border-radius: 16px;
+              height: 540px;
+              overflow: hidden;
+              transition: .3s;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right-box {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 42%;
+      height: 100%;
+      background: url(../images/agricultureContentBg.png) center no-repeat;
+      background-size: cover;
+      border-radius: 16px;
+      padding: 94px px2vw(88px) 0 px2vw(224px);
+
+      .name {
+        font-size: 32px;
+        color: #507005;
+        text-align: right;
+      }
+
+      .name-en {
+        font-size: 14px;
+        color: #507005;
+        text-align: right;
+        padding-left: px2vw(200px);
+      }
+
+      .parting {
+        height: 60px;
+        margin: 0;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 32px;
+          height: 2px;
+          background: #fff;
+          right: 0;
+          top: calc(50% - 1px);
+        }
+      }
+
+      .title {
+        font-size: 24px;
+        color: #fff;
+        text-align: right;
+      }
+
+      .intro {
+        font-size: 18px;
+        color: #fff;
+        text-align: right;
+        text-overflow: -o-ellipsis-lastline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 11;
+        line-clamp: 11;
+        -webkit-box-orient: vertical;
+      }
+
+      .swiper-check-btn {
+        position: relative;
+        margin-top: 60px;
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 2px;
+          height: 19px;
+          background-color: #d2d2d2;
+          top: calc(50% - 7px);
+          right: 72px;
+        }
+
+        .agriculture-data-prev {
+          width: 49px;
+          height: 49px;
+          border-radius: 50%;
+          //background:rgba(255,255,255,0.6);
+          right: 90px;
+          left: initial;
+          transition: .3s;
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.6);
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          &::after {
+            font-size: 20px;
+            color: #fff;
+          }
+        }
+
+        .agriculture-data-next {
+          width: 49px;
+          height: 49px;
+          border-radius: 50%;
+          transition: .3s;
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.6);
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          &::after {
+            font-size: 20px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.agriculture-show {
+  padding: px2vh(50px) px2vw(79px) px2vh(60px);
+
+  .content-box {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 16px;
+    padding: 0 px2vw(86px) 50px;
+
+    .title {
+      color: #8db729;
+      font-size: 32px;
+      line-height: 116px;
+      padding: 2px 0;
+      margin: 0;
+      background-image: url(../images/agricultureShowTitleBg.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+
+    }
+
+    .computer-box {
+      //background-image:url(../images/computerBg.png);
+      margin-top: 5px;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      height: px2vw(676px);
+      width: px2vw(1066px);
+      background-color: #f8f9fc;
+      border-radius: 16px;
+      position: relative;
+
+      .more {
+        font-size: 24px;
+        color: #fff;
+        background-color: #8db729;
+        box-shadow: 0 4px 12px 0 rgba(58, 79, 7, 0.24);
+        padding: 0 40px;
+        display: inline-block;
+        line-height: 58px;
+        border-radius: 40px;
+        position: absolute;
+        right: -80px;
+        bottom: 40px;
+      }
+
+      .computer-img {
+        max-width: px2vw(774px);
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+      }
+
+      .swiper-box {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: px2vw(739px);
+        bottom: px2vw(220px);
+
+        .img-box {
+          width: 100%;
+          height: px2vw(390px);
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .rolling-text-box {
+      width: calc(100% - 56vw);
+      margin-top: 5px;
+      height: px2vw(676px);
+      border-right: 1px solid #8db729;
+      padding: px2vw(46px) 0;
+
+      .list-box {
+        margin-bottom: px2vw(91px);
+        text-align: right;
+        position: relative;
+        padding-right: px2vw(46px);
+        cursor: pointer;
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 18px;
+          height: 18px;
+          background-color: #e9e9e9;
+          border-radius: 50%;
+          right: -9px;
+          top: calc(50% - 9px);
+          border: 1px solid #8db729;
+        }
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 10px;
+          height: 10px;
+          background-color: #8db729;
+          border-radius: 50%;
+          right: -5px;
+          top: calc(50% - 5px);
+          z-index: 2;
+          opacity: 0;
+          transition: .3s;
+        }
+
+        .name {
+          color: #999999;
+          font-size: 20px;
+          line-height: 1em;
+          margin-bottom: 12px;
+          transition: .3s;
+        }
+
+        .nameEn {
+          color: #999999;
+          font-size: 14px;
+          line-height: 1em;
+          margin-bottom: 0;
+          transition: .3s;
+        }
+
+        &.active-box {
+          &::before {
+            opacity: 1;
+          }
+
+          .name {
+            color: #8db729;
+          }
+
+          .nameEn {
+            color: #8db729;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .agriculture-banner-box {
+    height: calc(100vh - 74px);
+
+    .title-box {
+      width: 100%;
+
+      .title {
+        span {
+          font-size: 28px !important;
+          margin: initial !important;
+          top: initial !important;
+        }
+      }
+
+      .title-en {
+        top: 0;
+      }
+
+      .intro {
+        font-size: 16px;
+        padding: 0 20px;
+      }
+    }
+
+    .bottom-box {
+      background: none;
+      bottom: 10vh;
+      height: auto;
+
+      &::after {
+        position: absolute;
+        content: '';
+        clear: both;
+      }
+
+      .list-box {
+        position: initial;
+        width: 50%;
+        float: left;
+
+        .icon-box {
+          width: 50px;
+          height: 50px;
+          padding: 10px;
+        }
+
+        .name {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .canvas-box {
+    display: none;
+  }
+  .agriculture-content-box {
+    padding: 0;
+    border-radius: 0;
+
+    .content-box {
+      height: auto;
+
+      .left-box {
+        width: 100%;
+        padding-top: 0;
+
+        .box {
+          padding: 10px 20px;
+          height: auto;
+          border-radius: 16px;
+
+          .btn-list-box {
+            display: none;
+          }
+
+          #agricultureData {
+            margin-top: 10px;
+
+            .swiper-slide-active {
+              .img-box {
+                transform: translateX(0);
+              }
+            }
+
+            .list-item {
+              .img-box {
+                height: 240px;
+              }
+            }
+          }
+        }
+      }
+
+      .right-box {
+        //display: none;
+        position: relative;
+        width: 100%;
+        padding: 0 20px 15px;
+        background-size: cover;
+        border-radius: 0;
+
+        .parting {
+          display: none;
+        }
+
+        .swiper-check-btn {
+          display: none;
+        }
+
+        .name{
+          font-size: 22px;
+        }
+
+        .title{
+          font-size: 20px;
+        }
+
+        .intro{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .agriculture-show {
+    .content-box {
+      .title{
+        font-size: 20px;
+        line-height: 40px;
+        background-size: contain;
+      }
+      .computer-box{
+        width: 100%;
+
+        .more{
+          position: initial;
+          display: none;
+        }
+      }
+      .rolling-text-box {
+        width: 100%;
+        display: none;
+      }
+    }
+  }
+}

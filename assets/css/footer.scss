@@ -1,0 +1,146 @@
+$windowWidth: 1920px;
+$windowHeight: 1080px;
+$mainColor: #c8262b;
+@function px2vw($size, $width:$windowWidth) {
+  @if (type-of($size) == "number" and unit($size) == "px") {
+    @return $size * 100vw / $width;
+  } @else {
+    @return $size;
+  }
+}
+
+@function px2vh($size, $height:$windowHeight) {
+  @if (type-of($size) == "number" and unit($size) == "px") {
+    @return $size * 100vh / $height;
+  } @else {
+    @return $size;
+  }
+}
+
+footer {
+  height: 281px;
+  width: 100%;
+  background: #444444;
+  padding: 0 76px;
+  position: relative;
+
+  .footer-logo {
+    padding-top: 84px;
+    width: px2vw(425px);
+  }
+
+  .item-box {
+    margin-left: px2vw(200px);
+
+    .list-item {
+      width: px2vw(176px);
+      margin-left: px2vw(150px);
+      padding-top: 70px;
+
+      .name {
+        font-size: 22px;
+        color: #fff;
+      }
+
+      .value {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 300;
+        position: relative;
+
+        a {
+          color: #fff;
+          transition: .3s;
+        }
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 24px;
+          height: 18px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          left: -40px;
+          top: 3px;
+          transition: .3s;
+        }
+      }
+    }
+
+    @for $i from 1 through 3 {
+      .item-#{$i} {
+        width: 2em * $i;
+      }
+      .list-item:nth-child(#{$i}) {
+        .value {
+          &::after {
+            background-image: url(../images/contact#{$i}.png);
+          }
+
+          &:hover {
+            &::after {
+              background-image: url(../images/contact#{$i}H.png);
+            }
+
+            a {
+              color: $mainColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copy-right {
+    position: absolute;
+    right: px2vw(170px);
+    bottom: 20px;
+    color: #c3c3c3;
+    font-size: 14px;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    height: auto;
+    padding: 0 15px 10px;
+
+    .footer-logo {
+      width: auto;
+      max-width: 60%;
+      margin: auto;
+      float: initial !important;
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+
+    .item-box {
+      width: 100%;
+      margin-left: 0;
+      display: none;
+
+      .list-item {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 10px;
+
+        .name {
+          font-size: 18px;
+          margin-bottom: 6px;
+        }
+
+        .value {
+          font-size: 16px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .copy-right{
+      position: initial;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "homeBanner": [
+    {
+      "url": "./images/banner.jpg"
+    },
+    {
+      "url": "./images/banner2.jpg"
+    }
+  ],
+  "scenicData": {
+    "name": "智慧景区",
+    "nameEn": "<span class='red-text'>WISDOM</span>  SCENIC SPOT",
+    "intro": "为游客打造 “以人为本”的智慧旅游体验，推动游客从传统旅游消费方式向<span class='red-text'>现代旅游消费</span>方式转变",
+    "intro1": "从游客行前、行中、行后的旅游需求出发，通过网络、云计算、通信等新技术，提升游客旅游体验",
+    "data": [
+      {
+        "name": "门户网站策划建设",
+        "img": "./images/tourismScenic1.png"
+      },
+      {
+        "name": "A级景区创建支撑",
+        "img": "./images/tourismScenic2.png"
+      },
+      {
+        "name": "电子商务平台",
+        "img": "./images/tourismScenic3.png"
+      },
+      {
+        "name": "导视系统设计",
+        "img": "./images/tourismScenic4.png"
+      },
+      {
+        "name": "数据中心建设",
+        "img": "./images/tourismScenic5.png"
+      },
+      {
+        "name": "应急指挥调度中心建设",
+        "img": "./images/tourismScenic6.png"
+      },
+      {
+        "name": "大数据应用",
+        "img": "./images/tourismScenic7.png"
+      },
+      {
+        "name": "自媒体运营",
+        "img": "./images/tourismScenic8.png"
+      }
+    ]
+  },
+  "hotelData": {
+    "name": "智慧酒店",
+    "nameEn": "<span class='red-text'>TSMART</span>HOTEL",
+    "intro": "便捷的营销工具 + 适用的实施方法，<span class='red-text'>让酒店营销更简单</span>",
+    "intro1": "去除中间渠道，双向直接沟通和联系，降低维护和管理成本，让所有消费和行为高效化， 即时化",
+    "data": [
+      {
+        "name": "门户网站策划建设",
+        "img": "./images/tourismHotel1.png"
+      },
+      {
+        "name": "线上酒店管理系统",
+        "img": "./images/tourismHotel2.png"
+      },
+      {
+        "name": "客房智能应用",
+        "img": "./images/tourismHotel3.png"
+      },
+      {
+        "name": "Wi-Fi精准营销",
+        "img": "./images/tourismHotel4.png"
+      },
+      {
+        "name": "自媒体运营",
+        "img": "./images/tourismHotel5.png"
+      },
+      {
+        "name": "酒店720°全景认证系统",
+        "img": "./images/tourismHotel6.png"
+      },
+      {
+        "name": "泛会员管理系统",
+        "img": "./images/tourismHotel7.png"
+      },
+      {
+        "name": "互动多媒体设计",
+        "img": "./images/tourismHotel8.png"
+      }
+    ]
+  },
+  "travelData": {
+    "title": "全域旅游",
+    "titleEn": "<span class='red-text'>GLOBAL</span> TOURISM",
+    "title2": "以云数据中心为支撑，实现各系统<span class='red-text'>跨平台、跨网络、跨终端</span>管理",
+    "intro": "准确掌握游客和涉旅商家信息，实现旅游行业管理从传统的被动处理、事后取证向全程管理、实时管理转变",
+    "intro1": "实现传统旅游管理方式向现代管理方式转变",
+    "img1": "./images/travelImg1.png",
+    "img2": "./images/travelImg2.png",
+    "img3": "./images/travelImg3.png"
+  },
+  "internetData": {
+    "title": "互联网+",
+    "titleEn": "<span class='red-text'>INTERNET</span> + INDUSTRY",
+    "intro": "基于一站式在线互联网服务，实现O2O将自身的内容与服务更快触达用户",
+    "data": [
+      {
+        "title": "“互联网+”旅游",
+        "intro": "上略互动让旅游更有趣",
+        "type": "景区CBD / 智慧旅游 / 旅游自媒体",
+        "img": "./images/internet1.jpg"
+      },
+      {
+        "title": "“互联网+”文化",
+        "intro": "上略互动助民俗文化源远流长",
+        "type": "地方文化平台 / 视频全景 / 文化O2O",
+        "img": "./images/internet2.jpg"
+      },
+      {
+        "title": "“互联网+”农业",
+        "intro": "上略互动以三农角度思考",
+        "type": "农村电商 / 溯源系统 / 智慧生产",
+        "img": "./images/internet3.jpg"
+      },
+      {
+        "title": "“互联网+”银行",
+        "intro": "上略互动聚焦用户增值",
+        "type": "银行商城 / 理财超市 / BC互动",
+        "img": "./images/internet4.jpg"
+      }
+    ]
+  },
+  "interactiveData": {
+    "title": "互动营销",
+    "titleEn": "INTERACTIVE <span class='red-text'>MARKETING</span>",
+    "intro": "让广告更“精准”，提高口碑，引导舆论文案策划快速，有效，直达痛点，解决问题",
+    "data": [
+      {
+        "title": "营销推广",
+        "intro": [
+          "全网品牌形象诊断",
+          "内容营销",
+          "宣传视频",
+          "自媒体运营"
+        ]
+      },
+      {
+        "title": "720°语音互动",
+        "intro": [
+          "720°全景看世界",
+          "语音虚拟导游",
+          "手绘地图",
+          "社交互动"
+        ]
+      },
+      {
+        "title": "达人俱乐部",
+        "intro": [
+          "我是达人（旅游达人体验营销俱乐部）",
+          "达人述说（分享心情、感悟旅行的价值）",
+          "找达人（靠谱又有爱）"
+        ]
+      }
+    ]
+  },
+  "partnerData": {
+    "title": "部分合作伙伴",
+    "titleEn": "<span class='red-text'>Partial</span> partners",
+    "data": [
+      {
+        "img": "./images/partner1.jpg"
+      },
+      {
+        "img": "./images/partner2.jpg"
+      },
+      {
+        "img": "./images/partner3.jpg"
+      },
+      {
+        "img": "./images/partner3.jpg"
+      },
+      {
+        "img": "./images/partner5.jpg"
+      },
+      {
+        "img": "./images/partner6.jpg"
+      },
+      {
+        "img": "./images/partner7.jpg"
+      },
+      {
+        "img": "./images/partner8.jpg"
+      }
+    ]
+  }
+}

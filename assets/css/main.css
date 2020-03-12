@@ -1,0 +1,21 @@
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
+
+@font-face {
+  font-family: "fzxy";
+  src:url(../font/FZY3JW.TTF);
+}
+
+html,body{
+  font-family: "fzxy";
+  max-width: 1920px;
+  margin: auto;
+}
+
+a:hover{
+  text-decoration: none;
+}

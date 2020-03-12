@@ -1,0 +1,26 @@
+{
+  "operationBanner": [
+    "./images/operationBanner1.jpg",
+    "./images/operationBanner2.jpg"
+  ],
+  "operatingTitle": {
+    "title": "社会化运营",
+    "titleEn": "<span class='red-text'>Socialized</span>  operation",
+    "intro": "为游客打造 “以人为本”的智慧旅游体验 推动游客从传统旅游消费方式向现代旅游消费方式转变",
+    "intro1": "从游客行前、行中、行后的旅游需求出发 通过网络、云计算、通信等新技术，提升游客旅游体验"
+  },
+  "operatingData": [
+    {
+      "name": "提供服务1",
+      "nameEn": "Provision of services 1",
+      "image": "./images/operatingImg.jpg",
+      "intro": "从游客行前、行中、行后的旅游需求出发，通过网络、云计算、通信等新技术，提升游客旅游体验。从游客行前、行中、行后的旅游需求出发，通过网络、云计算、通信等新技术，提升游客旅游体验。"
+    },
+    {
+      "name": "提供服务2",
+      "nameEn": "Provision of services 2",
+      "image": "./images/operationBanner1.jpg",
+      "intro": "2从游客行前、行中、行后的旅游需求出发，通过网络、云计算、通信等新技术，提升游客旅游体验。从游客行前、行中、行后的旅游需求出发，通过网络、云计算、通信等新技术，提升游客旅游体验。"
+    }
+  ]
+}
