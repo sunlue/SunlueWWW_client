@@ -18,7 +18,7 @@
     "jquery": "^3.4.1",
     "js-base64": "^2.5.2",
     "nuxt": "^2.0.0",
-    "swiper": "^5.3.6",
+    "swiper": "^6.5.1",
     "swiper-animate-cn": "^1.1.1",
     "vue-cookies": "^1.7.0",
     "wowjs": "^1.1.3"
