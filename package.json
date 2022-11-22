@@ -17,7 +17,7 @@
     "gsap": "^3.2.4",
     "jquery": "^3.4.1",
     "js-base64": "^2.5.2",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "swiper": "^5.3.6",
     "swiper-animate-cn": "^1.1.1",
     "vue-cookies": "^1.7.0",
